@@ -62,7 +62,7 @@ class AlertController extends \BaseController {
 
 		$data = array(
 			'full_name' => $full_name,
-			'body' => 'Your kid is lost you fuck'
+			'body' => 'Your child has left your proximity'
 		);
 
 		$email_detail = array(
