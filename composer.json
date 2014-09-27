@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"aloha/twilio": "1.0.*",
-		"guzzlehttp/guzzle":"~4.0"
+		"guzzlehttp/guzzle":"~4.0",
+		"domandtom/laravel-swagger": "v0.07"
 	},
 	"autoload": {
 		"classmap": [

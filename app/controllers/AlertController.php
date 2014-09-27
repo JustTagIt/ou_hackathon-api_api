@@ -3,8 +3,42 @@
 class AlertController extends \BaseController {
 
 	/**
-	 * Show the form for creating a new resource.
-	 *
+	 * Send a Message
+	 *    
+	 * @SWG\Api(
+	 *   path="/alert/send",
+	 *   @SWG\Operation(
+	 *     method="POST",
+	 *     summary="Send SMS/E-Mail Alerts",
+	 *     notes="This method will allow SMS or E-Mail alerts to be sent to a specified address",
+	 *     nickname="SendAlert",
+	 *     @SWG\Parameters(
+	 * 	 	  @SWG\Parameter(
+	 *         name="full_name",
+	 *         description="Full name for sending email",
+	 *         required=false,
+	 *         type="string",
+	 *         paramType="form"
+	 *       ),
+	 * 	 	 @SWG\Parameter(
+	 *         name="email",
+	 *         description="Email Address to send an alert to",
+	 *         required=false,
+	 *         type="string",
+	 *         paramType="form",
+	 *     	 ),
+	 * 	     @SWG\Parameter(
+	 *         name="phone_number",
+	 *         description="Phone Number to send SMS to. +1 must prefix the phone number",
+	 *         required=false,
+	 *         type="string",
+	 *         paramType="form"
+	 *       )
+	 *     ),
+	 *     @SWG\ResponseMessage(code=200, message="Messages sent.")
+	 *   )
+	 * )
+	 * 
 	 * @return Response
 	 */
 	public function sendAlert()
@@ -51,6 +85,7 @@ class AlertController extends \BaseController {
 
 
 		return Response::json(array(
+			'response' => 'Message Sent',
 			'email_sent' => $email,
 			'sms_sent' => $phone_number
 			),200);
