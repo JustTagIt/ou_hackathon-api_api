@@ -94,6 +94,7 @@ class AlertController extends \BaseController {
 
 		$alert->email = $email;
 		$alert->phone_number = $phone_number;
+		$alert->full_name = $full_name;
 		$alert->save();
 
 
