@@ -1,12 +1,25 @@
 <?php
 
+use Swagger\Swagger;
+use Swagger\Annotations as SWG;
+
+/**
+ * @SWG\Resource(
+ *   apiVersion="1.0.0",
+ *   swaggerVersion="1.2",
+ *   resourcePath="alert",
+ *   description="Alerts",
+ *   produces="['application/json']"
+ * )
+ */
+
 class AlertController extends \BaseController {
 
 	/**
 	 * Send a Message
 	 *    
 	 * @SWG\Api(
-	 *   path="/alert/send",
+	 *   path="alert/send",
 	 *   @SWG\Operation(
 	 *     method="POST",
 	 *     summary="Send SMS/E-Mail Alerts",

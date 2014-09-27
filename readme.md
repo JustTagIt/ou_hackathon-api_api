@@ -5,7 +5,7 @@ This is an example API built for our hackathon for the University of Oklahoma.  
 * `git clone git@github.com:DomAndTom/ou-hackathon-api.git`
 * `composer install`
 * `php artisan migrate`
-
+* `php asset:publish`
 
 ### Configure
 Make sure to set your environment in bootstrap/start.php to properly detect the environment you are using

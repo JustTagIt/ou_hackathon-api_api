@@ -11,7 +11,7 @@ return array(
         'defaultBasePath' => ''
     ),
     'prefix' => '/api/docs',
-    'showDemo' => true,
+    'showDemo' => false,
     'cache' => true,
     'cacheExpireAt' => 60
 );

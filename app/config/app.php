@@ -122,6 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Aloha\Twilio\TwilioServiceProvider',
+		'DomAndTom\LaravelSwagger\LaravelSwaggerServiceProvider',
 
 	),
 
@@ -190,7 +191,6 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Twilio' => 'Aloha\Twilio\Facades\Twilio',
-		'DomAndTom\LaravelSwagger\LaravelSwaggerServiceProvider',
 
 	),
 
