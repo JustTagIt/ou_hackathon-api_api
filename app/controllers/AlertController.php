@@ -85,7 +85,7 @@ class AlertController extends \BaseController {
 		if($phone_number) {
 
 			// Send that sweet SMS
-			Twilio::message($phone_number, 'ALERT: Find Yo Baby. You are a terrible parent.');
+			Twilio::message($phone_number, 'ALERT: Find Yo Baby. It ran away!');
 
 		}
 
